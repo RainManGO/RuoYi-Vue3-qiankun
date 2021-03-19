@@ -1,0 +1,24 @@
+{
+  "name": "RuoYi-Vue3-qiankun",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:main": "cd main && yarn install",
+    "install:dashboard": "cd dashboard && yarn install",
+    "install:system": "cd system && yarn install",
+    "install:monitor": "cd monitor && yarn install",
+    "start": "npm-run-all --parallel start:*",
+    "start:dashboard": "cd dashboard && yarn serve:dev",
+    "start:system": "cd system && yarn serve:dev",
+    "start:monitor": "cd monitor && yarn serve:dev",
+    "start:main": "cd main && yarn serve:dev"
+  },
+  "author": "张宇",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
